@@ -1,7 +1,5 @@
 body {
     background-image: url('wp.jpg');
-    background-repeat: repeat;
-    background-attachment: fixed;
     color: #404040;
     font-family: 'Georgia', 'Garamond', serif;
     font-size: 11pt;
