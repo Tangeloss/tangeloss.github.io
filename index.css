@@ -5,13 +5,13 @@ body {
     color: #201e1e;
 }
 
-header {
+header, h1 {
     background-color: #3c5dec;
     padding: 20px;
     text-align: center;
 }
 
-section {
+div {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
