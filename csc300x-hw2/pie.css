@@ -1,56 +1,49 @@
 body {
-    background-color: #FFFFFF; /* White background for the overall page's body */
-    color: #404040; /* Foreground color for text in the body */
-    font-family: 'Georgia', 'Garamond', serif; /* Font families for page text */
+    background-image: url('silverware.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #404040;
+    font-family: 'Georgia', 'Garamond', serif;
     font-size: 11pt;
 }
 
-h2, h3, h4, h5, h6 {
-
-}
-
 h1 {
-    color: #A4A400; /* Foreground color for headings */
-    background-color: #F0F0F0; /* Background color for headings */
-    text-decoration: underline; /* Underline for all headings */
-    text-align: center; /* Center alignment for the main heading */
-    font-size: 22pt; /* Font size for the main heading */
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 22pt;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
     font-weight: bold;
 }
 
-h2, h3, h4, h5, h6 {
-    text-align: left; /* Left alignment for other headings */
-    font-size: 18pt; /* Font size for other headings */
+h2 {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    text-align: left;
+    font-size: 18pt;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial', sans-serif;
 }
 
 a {
-    color: #A4A400; /* Color for links */
+    color: #A4A400;
 }
 
-a:hover {
-    text-decoration: underline; /* Underline when hovering over links */
+
+blockquote {
+    background-color: #FFFFA8;
+    padding: 10px;
+    margin: 10px 0;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
+
+footer pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+    text-align: left;
 }
 
-.tooltip:hover::after {
-    content: "tablespoons";
-    position: absolute;
-    background-color: #F0F0F0;
-    color: #404040;
-    padding: 5px;
-    border: 1px solid #A4A400;
-    border-radius: 5px;
-    z-index: 1;
-}
-
-s {
-    text-decoration: line-through; /* Strikethrough for deleted word */
-}
-
-pre {
-    font-family: monospace; /* Monospace font for copyright notice */
+li {
+    list-style: url('pie_icon.gif');
 }
