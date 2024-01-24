@@ -1,0 +1,37 @@
+/*Hayden Perusek CSC300X HW2        25 Jan 2024.
+This assignment tests my understanding of basic HTML and CSS. 
+I have created the home page for a pie. This is my css file which handles the styling for my website 
+I used extra features 1 (background) and 3 (pie bullet) */
+
+body,h1,h2,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('pie-back.jpg');
+    background-size: 200%;
+    color: #333;
+}
+
+header {
+    background-color: #db6c7f;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #bef576;
+    border-radius: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

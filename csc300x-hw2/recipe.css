@@ -1,3 +1,9 @@
+/*Hayden Perusek CSC300X HW2        25 Jan 2024.
+This assignment tests my understanding of basic HTML and CSS. 
+I have created the recipe page for a pie. This is my css file which handles the styling for my website 
+I used extra features 1 (background) and 3 (pie bullet) */
+
+
 body {
     background-image: url('silverware.jpg');
     background-attachment: fixed;
