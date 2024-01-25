@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--Hayden Perusek CSC300X HW2        25 Jan 2024-->
-<!--This assignment tests my understanding of basic HTML and CSS. I have created the recipe page for a
-    pie. This is my html file which creates the main page for the website-->
-<!--I incorporated extra features 1 (background) and 3 (pie bullet)-->
+<!-- Hayden Perusek CSC300X HW2 25 Jan 2024 -->
+<!-- This assignment tests my understanding of basic HTML and CSS. I have created the recipe page for a pie. This is my html file which creates the main page for the website -->
+<!-- I incorporated extra features 1 (background) and 3 (pie bullet) -->
 
 <head>
     <meta charset="UTF-8">
@@ -22,15 +21,15 @@
 
     <section>
         <h2>About Me</h2>
-        <p>I cant take credit for all of these delicious resipes out in the internet! Many of these have been passsed down from 
-            generations from families I have never even met. What I can do, is direct you to wonderful recipes I have come across
-            during my professional eating career. Call me...The Pie Middle Man!
+        <p>I can't take credit for all of these delicious recipes out on the internet! Many of these have been passed
+            down from generations from families I have never even met. What I can do is direct you to wonderful recipes
+            I have come across during my professional eating career. Call me...The Pie Middle Man!
         </p>
     </section>
 
     <section>
         <h2>Featured Recipe</h2>
-        <p>Try my favorite <a href="pie.html">Lemon Meringue Pie</a>. 
+        <p>Try my favorite <a href="pie.html">Lemon Meringue Pie</a>.
             A sweet and simple recipe that has been a favorite for pie enthusiasts for many years.</p>
     </section>
 
@@ -38,7 +37,21 @@
         <p>Copyright © 2095 Middle Man</p>
         <p>A Middle Man Production</p>
         <p>All rights reserved</p>
+
+        <a href="http://validator.w3.org/check?url=referer">
+            <img src="w3c-html.png" alt="Valid HTML5" width="80" height="25">
+        </a>
+
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img src="w3c-css.png" alt="Valid CSS" width="80" height="25">
+        </a>
     </footer>
+
+    <script>
+        // Access referrer information
+        var referrerElement = document.getElementById('referrer');
+        referrerElement.textContent = document.referrer;
+    </script>
 
 </body>
 
