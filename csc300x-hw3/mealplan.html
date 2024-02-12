@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <script src="mealplan.js" defer></script> <!-- Link to your JavaScript file for event handling -->
+</head>
+<body>
+    <header>
+        <h1>Meal Plan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Recommendations</a></li> <!-- Link back to the main page -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recommendations">
+            <h2>Recommended Places and Dishes</h2>
+            <div class="recommendation">
+                <h3>Cafe Delight</h3>
+                <ul>
+                    <li><button onclick="addToMealPlan('Cafe Delight', 'Coffee', 3.50)">Add Coffee ($3.50)</button></li>
+                    <li><button onclick="addToMealPlan('Cafe Delight', 'Pastries', 2.50)">Add Pastries ($2.50 - $5.00)</button></li>
+                    <li><button onclick="addToMealPlan('Cafe Delight', 'Sandwich', 8.50)">Add Sandwich ($8.50)</button></li>
+                </ul>
+            </div>
+
+            <!-- Include recommendations for Pizza Palace and Sushi Spot similarly -->
+        </section>
+
+        <section id="meal-plan">
+            <h2>Meal Plan</h2>
+            <ul id="meal-items">
+                <!-- Meal plan items will be dynamically added here -->
+            </ul>
+            <p>Total Cost: $<span id="total-cost">0.00</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>

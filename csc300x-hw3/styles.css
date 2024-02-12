@@ -1,37 +1,68 @@
-/*Hayden Perusek CSC300X HW2        25 Jan 2024.
-This assignment tests my understanding of basic HTML and CSS. 
-I have created the home page for a pie. This is my css file which handles the styling for my website 
-I used extra features 1 (background) and 3 (pie bullet) */
-
-body,h1,h2,p,ul {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('pie-back.jpg');
-    background-size: 200%;
+    background-color: #f8f8f8;
     color: #333;
 }
 
 header {
-    background-color: #db6c7f;
-    padding: 20px;
-    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-section {
-    max-width: 800px;
-    margin: 20px auto;
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #bef576;
-    border-radius: 18px;
+}
+
+#about,
+#recommendations {
+    width: 45%;
+}
+
+.recommendation {
+    margin-bottom: 30px;
+}
+
+.recommendation h3 {
+    color: #333;
+}
+
+.dish img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.promotion {
+    color: #007bff; /* Blue color for promotions */
+}
+
+aside {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
 }
 
 footer {
     background-color: #333;
     color: #fff;
+    padding: 10px 20px;
     text-align: center;
-    padding: 10px;
 }

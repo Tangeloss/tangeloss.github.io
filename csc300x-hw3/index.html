@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food and Drink Recommendations</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file for event handling -->
 </head>
 <body>
     <header>
@@ -26,20 +27,22 @@
 
         <section id="recommendations">
             <h2>Recommendations</h2>
-            <article>
-                <h3>1. Cafe Delight</h3>
+            <article class="recommendation">
+                <h3>Cafe Delight</h3>
                 <p>A cozy cafe serving delicious coffee and pastries. Perfect for a quick breakfast or a midday pick-me-up.</p>
+                <div class="dish">
+                    <img src="cafe_delight_coffee.jpg" alt="Coffee" data-description="Start your day with our freshly brewed coffee!" data-price="$3.50">
+                </div>
+                <div class="dish">
+                    <img src="cafe_delight_pastries.jpg" alt="Pastries" data-description="Indulge in our assortment of freshly baked pastries!" data-price="$2.50 - $5.00">
+                </div>
+                <div class="dish">
+                    <img src="cafe_delight_sandwich.jpg" alt="Sandwich" data-description="Try our signature sandwich made with locally sourced ingredients!" data-price="$8.50">
+                </div>
+                <p class="promotion">Special promotion: Enjoy 10% off your order when you mention this blog!</p>
             </article>
 
-            <article>
-                <h3>2. Pizza Palace</h3>
-                <p>Craving pizza? Look no further! Pizza Palace offers a variety of mouthwatering pizzas with fresh ingredients.</p>
-            </article>
-
-            <article>
-                <h3>3. Sushi Spot</h3>
-                <p>For sushi lovers, this is the place to be! Sushi Spot serves fresh and tasty sushi rolls that will satisfy your cravings.</p>
-            </article>
+            <!-- Include recommendations for Pizza Palace and Sushi Spot similarly -->
         </section>
 
         <aside>
