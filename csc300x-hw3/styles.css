@@ -2,28 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffe6cc;
+    background-image: url("restaurant_imgs/sushi.jpg");
+    background-size: cover;
     color: #663300;
 }
 
+
 header {
     background-color: #cc6600;
-    color: #fff;
+    color: #534b4b;
     padding: 10px 20px;
 }
 
 header h1 {
     margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
 }
 
 main {
@@ -32,26 +24,10 @@ main {
     padding: 20px;
 }
 
-#about {
-    width: 45%;
-    background-color: #fff;
-    padding: 20px;
-}
-
-#recommendations {
-    width: 45%;
-    background-color: #fff;
-    padding: 20px;
-}
-
 .recommendation {
     margin-bottom: 30px;
-    background-color: #f9f9f9; /* Background color for each recommendation */
-    padding: 20px; /* Add padding for better readability */
-}
-
-.recommendation h3 {
-    color: #cc6600;
+    background-color: #f9f9f9;
+    padding: 20px;
 }
 
 .dish img {
@@ -61,7 +37,7 @@ main {
     margin-top: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    border-radius: 10px; /* Rounded edges for images */
+    border-radius: 10px;
 }
 
 .dish img:hover {
@@ -92,7 +68,7 @@ button {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 
 button:hover {
@@ -100,24 +76,25 @@ button:hover {
 }
 
 #recommendations {
-    width: 45%;
-    background-color: #bb9c86; /* Brown background color */
+    width: 55%;
+    background-color: #bb9c86;
     padding: 20px;
-    margin: 10; /* Reset margin to ensure consistent spacing */
-    border-radius: 10px; /* Rounded corners for the section */
+    margin: 10;
+    border-radius: 10px;
 }
 
 #about {
-    width: 45%;
-    background-color: #ad764f; /* Brown background color */
+    width: 40%;
+    background-color: #ad764f;
     padding: 20px;
-    margin: 10; /* Reset margin to ensure consistent spacing */
-    border-radius: 10px; /* Rounded corners for the section */
+    margin: 10;
+    border-radius: 10px;
 }
+
 #specials {
-    width: 45%;
-    background-color: #ad764f; /* Brown background color */
+    width: 40%;
+    background-color: #ad764f;
     padding: 20px;
-    margin: 10; /* Reset margin to ensure consistent spacing */
-    border-radius: 10px; /* Rounded corners for the section */
+    margin: 10;
+    border-radius: 10px;
 }
