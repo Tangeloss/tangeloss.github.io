@@ -18,21 +18,16 @@ header h1 {
     margin: 0;
 }
 
+
 main {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-.recommendation {
-    margin-bottom: 30px;
-    background-color: #f9f9f9;
-    padding: 20px;
-}
-
 .dish img {
     max-width: 50%;
-    height: auto;
+    height: 50%;
     margin-bottom: 10px;
     margin-top: 10px;
     cursor: pointer;
@@ -93,7 +88,7 @@ button:hover {
 
 #specials {
     width: 40%;
-    background-color: #ad764f;
+    background-color: #f0e6d8;
     padding: 20px;
     margin: 10;
     border-radius: 10px;
