@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    background-color: #ffe6cc; /* Warm background color */
+    color: #663300; /* Dark brown text color */
 }
 
 header {
-    background-color: #333;
+    background-color: #cc6600; /* Dark orange header background */
     color: #fff;
     padding: 10px 20px;
 }
@@ -42,7 +42,7 @@ main {
 }
 
 .recommendation h3 {
-    color: #333;
+    color: #cc6600; /* Dark orange heading color */
 }
 
 .dish img {
@@ -51,17 +51,17 @@ main {
 }
 
 .promotion {
-    color: #007bff; /* Blue color for promotions */
+    color: #8B4513; /* Saddle brown color for promotions */
 }
 
 aside {
     width: 30%;
-    background-color: #fff;
+    background-color: #f0e6d8; /* Light brown aside background color */
     padding: 20px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #cc6600; /* Dark orange footer background */
     color: #fff;
     padding: 10px 20px;
     text-align: center;
