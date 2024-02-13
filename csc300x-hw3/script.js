@@ -1,3 +1,6 @@
+//Hayden Perusek CSC300X HW3 13 Feb 2024
+//This assignment is to practice layout and simple event handling by creating a website in the style of a blog. This is my javascript file which handles adding meals on the mealprep page
+
 document.addEventListener('DOMContentLoaded', function () {
     const restaurants = document.querySelectorAll('.restaurant');
 
