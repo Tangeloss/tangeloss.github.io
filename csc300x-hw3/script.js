@@ -8,16 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const image = dish.querySelector('img');
             const description = dish.querySelector('.dish-description');
 
-            description.style.display = 'none'; // Initially hide all descriptions
+            description.style.display = 'none';
 
             image.addEventListener('click', function () {
-                // Hide all descriptions and reset image sizes
                 dishes.forEach(function (d) {
                     d.querySelector('.dish-description').style.display = 'none';
                     d.querySelector('img').style.width = '175px';
                 });
 
-                // Display description of the clicked dish and adjust image size
                 description.style.display = 'block';
                 image.style.width = '235px';
             });

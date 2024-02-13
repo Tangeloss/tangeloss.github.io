@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffe6cc; /* Warm background color */
-    color: #663300; /* Dark brown text color */
+    background-color: #ffe6cc;
+    color: #663300;
 }
 
 header {
-    background-color: #cc6600; /* Dark orange header background */
+    background-color: #cc6600;
     color: #fff;
     padding: 10px 20px;
 }
@@ -32,37 +32,92 @@ main {
     padding: 20px;
 }
 
-#about,
+#about {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+}
+
 #recommendations {
     width: 45%;
+    background-color: #fff;
+    padding: 20px;
 }
 
 .recommendation {
     margin-bottom: 30px;
+    background-color: #f9f9f9; /* Background color for each recommendation */
+    padding: 20px; /* Add padding for better readability */
 }
 
 .recommendation h3 {
-    color: #cc6600; /* Dark orange heading color */
+    color: #cc6600;
 }
 
 .dish img {
-    max-width: 200px; /* Adjusted maximum width for smaller images */
+    max-width: 50%;
+    height: auto;
     margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Rounded edges for images */
+}
+
+.dish img:hover {
+    transform: scale(1.2);
 }
 
 .promotion {
-    color: #8B4513; /* Saddle brown color for promotions */
+    color: #8B4513;
 }
 
 aside {
     width: 30%;
-    background-color: #f0e6d8; /* Light brown aside background color */
+    background-color: #f0e6d8;
     padding: 20px;
 }
 
 footer {
-    background-color: #cc6600; /* Dark orange footer background */
+    background-color: #cc6600;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
+}
+
+button {
+    background-color: #e79b0d;
+    border: none;
+    color: #720615;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FFC100;
+}
+
+#recommendations {
+    width: 45%;
+    background-color: #bb9c86; /* Brown background color */
+    padding: 20px;
+    margin: 10; /* Reset margin to ensure consistent spacing */
+    border-radius: 10px; /* Rounded corners for the section */
+}
+
+#about {
+    width: 45%;
+    background-color: #ad764f; /* Brown background color */
+    padding: 20px;
+    margin: 10; /* Reset margin to ensure consistent spacing */
+    border-radius: 10px; /* Rounded corners for the section */
+}
+#specials {
+    width: 45%;
+    background-color: #ad764f; /* Brown background color */
+    padding: 20px;
+    margin: 10; /* Reset margin to ensure consistent spacing */
+    border-radius: 10px; /* Rounded corners for the section */
 }
