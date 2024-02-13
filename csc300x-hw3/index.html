@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,13 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
     <script src="script.js" defer></script> <!-- Link to your JavaScript file for event handling -->
 </head>
+
 <body>
     <header>
         <h1>Food and Drink Recommendations Near Petty Building</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#recommendations">Recommendations</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -22,64 +22,136 @@
     <main>
         <section id="about">
             <h2>About</h2>
-            <p>Welcome to our food and drink recommendations blog! We're here to help you discover the best places to eat and drink around the Petty Building.</p>
+            <p>Welcome to our food and drink recommendations blog! We're here to help you discover the best places to
+                eat and drink around the Petty Building.</p>
         </section>
 
         <section id="recommendations">
             <h2>Recommendations</h2>
-        
-            <article class="recommendation">
+
+            <article class="restaurant" id="old-town-draught-house">
                 <h3>Old Town Draught House</h3>
-                <p>Located right off of Spring Garden in the middle of campus, Old Town Draught House offers a cozy pub atmosphere and a wide selection of craft beers on tap. If you're in the mood for a burger or a chicken philly with your beer, this is the place to go!</p>
-    <p><strong>Address:</strong> 1205 Spring Garden Street, Greensboro, NC 27401</p>
-    <p><strong>Hours:</strong> Every Day: 11:00 AM - 11:00 PM</p>
-                <div class="dish">
-                    <img src="restaurant_imgs/beer.jpg" alt="Beer" data-description="Explore our rotating selection of craft beers!" data-price="$5.00 - $10.00">
-                </div>
-                <div class="dish">
-                    <img src="restaurant_imgs/burger.jpg" alt="Burger" data-description="Try our signature Old Town Burger, made with locally sourced ingredients!" data-price="$12.00">
-                </div>
-                <div class="dish">
-                    <img src="restaurant_imgs/philly.jpg" alt="Chicken Philly" data-description="Pair your beer with our giant soft pretzel served with mustard and cheese sauce!" data-price="$8.00">
+                <p>Located right off of Spring Garden in the middle of campus, Old Town Draught House offers a cozy pub
+                    atmosphere and a wide selection of craft beers on tap. If you're in the mood for a burger or a
+                    chicken philly with your beer, this is the place to go!</p>
+                <p><strong>Address:</strong> 1205 Spring Garden Street, Greensboro, NC 27401</p>
+                <p><strong>Hours:</strong> Every Day: 11:00 AM - 11:00 PM</p>
+                <p><strong>Recommended Dishes:</strong></p>
+
+                <div class="flex-container">
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/beer.jpg" alt="Beer" data-price="$2.75">
+                        </div>
+                        <p class="dish-description">BEER - With some new and upcoming local beers, or even your favorite
+                            popular draft beers, Old Town has you covered!
+                            Add-ons. <br><strong>Price:</strong> $2.75</p>
+                    </div>
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/burger.jpg" alt="Burger" data-price="$12.00">
+                        </div>
+                        <p class="dish-description">BURGER - Sometimes you want a tried and true burger! You can get it
+                            however you like, but by default it comes with patty, lettuce, cheese, tomato, and mayo.
+                            Served with fries.
+                            Add-ons. <br><strong>Price:</strong> $12.00</p>
+                    </div>
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/philly.jpg" alt="Chicken Philly" data-price="$8.00">
+                        </div>
+                        <p class="dish-description">CHICKEN PHILLY - One of the most popular dishes on the menu! Imagine
+                            a philly cheesesteak but with chicken, and a secret sauce. Comes with a side of fries.
+                            Add-ons. <br><strong>Price:</strong> $8.00</p>
+                    </div>
                 </div>
                 <p class="promotion">Special promotion: Enjoy $1 off any craft beer during Happy Hour!</p>
             </article>
-        
-            <article class="recommendation">
+
+            <article class="restaurant" id="raaz-indian-kitchen">
                 <h3>Raaz Indian Kitchen</h3>
-                <p>I am a huge Indian food lover, but sometimes it is just too far away to satisfy those taste buds you have! Here comes Raaz Indian Kitchen, just walking distance from the Petty building! I recommend their Lamb Korma, Garlic Naan, and Gobi!</p>
+                <p>I am a huge Indian food lover, but sometimes it is just too far away to satisfy those taste buds you
+                    have! Here comes Raaz Indian Kitchen, just walking distance from the Petty building! I recommend
+                    their Lamb Korma, Garlic Naan, and Gobi!</p>
                 <p><strong>Address:</strong> 427 Tate Street, Greensboro, NC 27403</p>
                 <p><strong>Hours:</strong> Mon-Sat: 11:30 AM - 10:00 PM, Sun: Closed</p>
-                <div class="dish">
-                    <img src="restaurant_imgs/korma.jpg" alt="Korma Curry" data-description="Indulge in our flavorful Chicken Tikka Masala, served with fragrant basmati rice!" data-price="$15.00">
+                <p><strong>Recommended Dishes:</strong></p>
+
+                <div class="flex-container">
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/korma.jpg" alt="Korma Curry" data-price="$15.00">
+                        </div>
+                        <p class="dish-description">LAMB KORMA - This lamb korma made with cashew nuts and aromatic
+                            spices is a delicious entree. The entire family is going to love this, guarantee! Comes with
+                            a side of rice.
+                            Add-ons. <br><strong>Price:</strong> $15.00</p>
+                    </div>
+
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/naan.jpg" alt="Naan Bread" data-price="$2.75">
+                        </div>
+                        <p class="dish-description">NAAN BREAD - everyone knows about naan bread! This is hte perfect
+                            side to your favorite dishes.
+                            Add-ons. <br><strong>Price:</strong> $2.75</p>
+                    </div>
+
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/gobi.jpg" alt="Gobi" data-price="$4.75">
+                        </div>
+                        <p class="dish-description">ALOO GOBI - Aloo gobi (potatoes & cauliflower) is a popular dish in
+                            which potatoes and cauliflower are cooked with onions, tomatoes and spices.
+                            Add-ons. <br><strong>Price:</strong> $4.75</p>
+                    </div>
                 </div>
-                <div class="dish">
-                    <img src="restaurant_imgs/naan.jpg" alt="Naan Bread" data-description="Don't forget to try our freshly baked Garlic Naan, perfect for dipping in our delicious curries!" data-price="$3.50">
-                </div>
-                <div class="dish">
-                    <img src="restaurant_imgs/gobi.jpg" alt="Gobi" data-description="Cool off with our refreshing Mango Lassi, a traditional Indian yogurt-based drink!" data-price="$4.00">
-                </div>
-                <p class="promotion">Special promotion: Free dessert with every dinner entree purchase!</p>
             </article>
-        
-            <article class="recommendation">
+
+            <article class="restaurant" id="sushi-republic">
                 <h3>Sushi Republic</h3>
-                <p>At Sushi Republic, we're passionate about sushi. Our skilled chefs create beautiful and delicious sushi rolls using the freshest ingredients.</p>
+                <p>At Sushi Republic, we're passionate about sushi. Our skilled chefs create beautiful and delicious
+                    sushi rolls using the freshest ingredients.</p>
                 <p><strong>Address:</strong> 329 Tate Street, Greensboro, NC 27405</p>
-                <p><strong>Hours:</strong> Mon-Fri: 11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM, Sat 5:00 PM - 9:30 PM, Sun: Closed</p>
-                <div class="dish">
-                    <img src="restaurant_imgs/sushi.jpg" alt="Sushi Rolls" data-description="Try our signature Sushi Boat, featuring an assortment of our best-selling sushi rolls!" data-price="$25.00">
+                <p><strong>Hours:</strong> Mon-Fri: 11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM, Sat 5:00 PM - 9:30 PM, Sun:
+                    Closed</p>
+                <p><strong>Recommended Dishes:</strong></p>
+
+                <div class="flex-container">
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/sushi.jpg" alt="Sushi Rolls"
+                                data-description="Try our signature Sushi Boat, featuring an assortment of our best-selling sushi rolls!"
+                                data-price="$25.00">
+                        </div>
+                        <p class="dish-description">SUSHI ROLLS - Everyone knows sushi! You can choose from over 15
+                            different types of sushi. Each order comes with 10 rolls.
+                            Add-ons. <br><strong>Price:</strong> $25.00</p>
+                    </div>
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/sashimi.jpg" alt="Sashimi"
+                                data-description="For the purists, indulge in our fresh and flavorful Sashimi Platter, featuring a variety of fish!"
+                                data-price="$20.00">
+                        </div>
+                        <p class="dish-description">SASHIMI- If you love sushi, then you love sashimi! You can choose
+                            from 5 different types of sashimi. Each order comes with 10 pieces.
+                            Add-ons. <br><strong>Price:</strong> $20.00</p>
+                    </div>
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/miso.jpg" alt="Miso Soup"
+                                data-description="Start your meal with our comforting Miso Soup, made with tofu, seaweed, and green onions!"
+                                data-price="$3.00">
+                        </div>
+                        <p class="dish-description">MISO SOUP - The perfect warm side to your order. Don't forgrt to
+                            order another one for takeaway!
+                            Add-ons. <br><strong>Price:</strong> $3.00</p>
+                    </div>
                 </div>
-                <div class="dish">
-                    <img src="restaurant_imgs/sashimi.jpg" alt="Sashimi" data-description="For the purists, indulge in our fresh and flavorful Sashimi Platter, featuring a variety of fish!" data-price="$20.00">
-                </div>
-                <div class="dish">
-                    <img src="restaurant_imgs/miso.jpg" alt="Miso Soup" data-description="Start your meal with our comforting Miso Soup, made with tofu, seaweed, and green onions!" data-price="$3.00">
-                </div>
-                <p class="promotion">Special promotion: All-you-can-eat sushi on Wednesdays for $30 per person!</p>
             </article>
         </section>
-        
+
 
         <aside>
             <h2>Specials</h2>
@@ -97,4 +169,5 @@
         <p>Have questions or suggestions? Reach out to us at foodblog@example.com.</p>
     </footer>
 </body>
+
 </html>

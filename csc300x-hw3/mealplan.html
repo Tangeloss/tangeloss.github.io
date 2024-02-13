@@ -1,48 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Plan</title>
+    <title>Meal Planner</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
-    <script src="mealplan.js" defer></script> <!-- Link to your JavaScript file for event handling -->
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file for event handling -->
 </head>
+
 <body>
     <header>
-        <h1>Meal Plan</h1>
+        <h1>Food and Drink Recommendations Near Petty Building</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Back to Recommendations</a></li> <!-- Link back to the main page -->
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="recommendations">
-            <h2>Recommended Places and Dishes</h2>
-            <div class="recommendation">
-                <h3>Cafe Delight</h3>
-                <ul>
-                    <li><button onclick="addToMealPlan('Cafe Delight', 'Coffee', 3.50)">Add Coffee ($3.50)</button></li>
-                    <li><button onclick="addToMealPlan('Cafe Delight', 'Pastries', 2.50)">Add Pastries ($2.50 - $5.00)</button></li>
-                    <li><button onclick="addToMealPlan('Cafe Delight', 'Sandwich', 8.50)">Add Sandwich ($8.50)</button></li>
-                </ul>
-            </div>
+    <main class="meal-planner-container">
 
-            <!-- Include recommendations for Pizza Palace and Sushi Spot similarly -->
-        </section>
+        <aside id="recommendations">
+            <h2>Recommendations</h2>
 
+            <article class="restaurant" id="old-town-draught-house">
+                <h3>Old Town Draught House</h3>
+                <p>Located right off of Spring Garden in the middle of campus, Old Town Draught House offers a cozy pub
+                    atmosphere and a wide selection of craft beers on tap. If you're in the mood for a burger or a
+                    chicken philly with your beer, this is the place to go!</p>
+                <p><strong>Address:</strong> 1205 Spring Garden Street, Greensboro, NC 27401</p>
+                <p><strong>Hours:</strong> Every Day: 11:00 AM - 11:00 PM</p>
+                <p><strong>Recommended Dishes:</strong></p>
+
+                <div class="flex-container">
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/beer.jpg" alt="Beer" data-price="$2.75">
+                        </div>
+                        <p class="dish-description">BEER - With some new and upcoming local beers, or even your favorite
+                            popular draft beers, Old Town has you covered!
+                            Add-ons. <br><strong>Price:</strong> $2.75</p>
+                    </div>
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/burger.jpg" alt="Burger" data-price="$12.00">
+                        </div>
+                        <p class="dish-description">BURGER - Sometimes you want a tried and true burger! You can get it
+                            however you like, but by default it comes with patty, lettuce, cheese, tomato, and mayo.
+                            Served with fries.
+                            Add-ons. <br><strong>Price:</strong> $12.00</p>
+                    </div>
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/philly.jpg" alt="Chicken Philly" data-price="$8.00">
+                        </div>
+                        <p class="dish-description">CHICKEN PHILLY - One of the most popular dishes on the menu! Imagine
+                            a philly cheesesteak but with chicken, and a secret sauce. Comes with a side of fries.
+                            Add-ons. <br><strong>Price:</strong> $8.00</p>
+                    </div>
+                </div>
+                <p class="promotion">Special promotion: Enjoy $1 off any craft beer during Happy Hour!</p>
+            </article>
+
+            <article class="restaurant" id="raaz-indian-kitchen">
+                <h3>Raaz Indian Kitchen</h3>
+                <p>I am a huge Indian food lover, but sometimes it is just too far away to satisfy those taste buds you
+                    have! Here comes Raaz Indian Kitchen, just walking distance from the Petty building! I recommend
+                    their Lamb Korma, Garlic Naan, and Gobi!</p>
+                <p><strong>Address:</strong> 427 Tate Street, Greensboro, NC 27403</p>
+                <p><strong>Hours:</strong> Mon-Sat: 11:30 AM - 10:00 PM, Sun: Closed</p>
+                <p><strong>Recommended Dishes:</strong></p>
+
+                <div class="flex-container">
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/korma.jpg" alt="Korma Curry" data-price="$15.00">
+                        </div>
+                        <p class="dish-description">LAMB KORMA - This lamb korma made with cashew nuts and aromatic
+                            spices is a delicious entree. The entire family is going to love this, guarantee! Comes with
+                            a side of rice.
+                            Add-ons. <br><strong>Price:</strong> $15.00</p>
+                    </div>
+
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/naan.jpg" alt="Naan Bread" data-price="$2.75">
+                        </div>
+                        <p class="dish-description">NAAN BREAD - everyone knows about naan bread! This is hte perfect
+                            side to your favorite dishes.
+                            Add-ons. <br><strong>Price:</strong> $2.75</p>
+                    </div>
+
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/gobi.jpg" alt="Gobi" data-price="$4.75">
+                        </div>
+                        <p class="dish-description">ALOO GOBI - Aloo gobi (potatoes & cauliflower) is a popular dish in
+                            which potatoes and cauliflower are cooked with onions, tomatoes and spices.
+                            Add-ons. <br><strong>Price:</strong> $4.75</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="restaurant" id="sushi-republic">
+                <h3>Sushi Republic</h3>
+                <p>At Sushi Republic, we're passionate about sushi. Our skilled chefs create beautiful and delicious
+                    sushi rolls using the freshest ingredients.</p>
+                <p><strong>Address:</strong> 329 Tate Street, Greensboro, NC 27405</p>
+                <p><strong>Hours:</strong> Mon-Fri: 11:30 AM - 2:30 PM, 5:00 PM - 9:30 PM, Sat 5:00 PM - 9:30 PM, Sun:
+                    Closed</p>
+                <p><strong>Recommended Dishes:</strong></p>
+
+                <div class="flex-container">
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/sushi.jpg" alt="Sushi Rolls"
+                                data-description="Try our signature Sushi Boat, featuring an assortment of our best-selling sushi rolls!"
+                                data-price="$25.00">
+                        </div>
+                        <p class="dish-description">SUSHI ROLLS - Everyone knows sushi! You can choose from over 15
+                            different types of sushi. Each order comes with 10 rolls.
+                            Add-ons. <br><strong>Price:</strong> $25.00</p>
+                    </div>
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/sashimi.jpg" alt="Sashimi"
+                                data-description="For the purists, indulge in our fresh and flavorful Sashimi Platter, featuring a variety of fish!"
+                                data-price="$20.00">
+                        </div>
+                        <p class="dish-description">SASHIMI- If you love sushi, then you love sashimi! You can choose
+                            from 5 different types of sashimi. Each order comes with 10 pieces.
+                            Add-ons. <br><strong>Price:</strong> $20.00</p>
+                    </div>
+                    <div class="dish">
+                        <div class="image-container">
+                            <img src="restaurant_imgs/miso.jpg" alt="Miso Soup"
+                                data-description="Start your meal with our comforting Miso Soup, made with tofu, seaweed, and green onions!"
+                                data-price="$3.00">
+                        </div>
+                        <p class="dish-description">MISO SOUP - The perfect warm side to your order. Don't forgrt to
+                            order another one for takeaway!
+                            Add-ons. <br><strong>Price:</strong> $3.00</p>
+                    </div>
+                </div>
+            </article>
+        </aside>
         <section id="meal-plan">
             <h2>Meal Plan</h2>
-            <ul id="meal-items">
-                <!-- Meal plan items will be dynamically added here -->
+            <ul id="meal-list">
+
             </ul>
-            <p>Total Cost: $<span id="total-cost">0.00</span></p>
+            <button id="add-another-order">Add Another To Order</button>
+            <p>Total Cost: <span id="total-cost">$0.00</span></p>
         </section>
+
+
+
     </main>
 
-    <footer>
-        <!-- Footer content here -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
     </footer>
 </body>
+
 </html>

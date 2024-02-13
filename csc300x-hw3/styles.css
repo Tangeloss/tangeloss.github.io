@@ -46,7 +46,7 @@ main {
 }
 
 .dish img {
-    max-width: 300px;
+    max-width: 200px; /* Adjusted maximum width for smaller images */
     margin-bottom: 10px;
 }
 
