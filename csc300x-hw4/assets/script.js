@@ -1,5 +1,6 @@
 /*Hayden Perusek       300X HW4        23 Feb 2024*/
-/*In this assignment, I have practiced putting together all the skills we have reviewed so far by building a simple rockpaper-scissors game on a web page.*/
+/*In this assignment, I have practiced putting together all the skills we have reviewed so far by building a simple 
+rock-paper-scissors game on a web page.*/
 
 let wins = 0;
 let losses = 0;
