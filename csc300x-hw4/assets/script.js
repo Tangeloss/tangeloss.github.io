@@ -1,0 +1,53 @@
+/*Hayden Perusek       300X HW4        23 Feb 2024*/
+/*In this assignment, I have practiced putting together all the skills we have reviewed so far by building a simple rockpaper-scissors game on a web page.*/
+
+let wins = 0;
+let losses = 0;
+let ties = 0;
+
+function playerChoice(choice) {
+    document.getElementById('rock').style.border = '';
+    document.getElementById('paper').style.border = '';
+    document.getElementById('scissors').style.border = '';
+    document.getElementById(choice).style.border = '2px solid blue';
+
+    document.getElementById('outcome').textContent = 'Thinking...';
+
+    let interval = 500;
+    let shuffledImages = ['rock', 'paper', 'scissors'].sort(() => Math.random() - 0.5);
+    let currentIndex = 0;
+
+    let shuffleInterval = setInterval(() => {
+        document.getElementById('computer-choice').src = `assets/images/${shuffledImages[currentIndex]}.PNG`;
+        currentIndex++;
+        if (currentIndex === shuffledImages.length) {
+            currentIndex = 0;
+        }
+    }, interval);
+
+    setTimeout(() => {
+        clearInterval(shuffleInterval);
+        let computerChoice = shuffledImages[Math.floor(Math.random() * shuffledImages.length)];
+        document.getElementById('computer-choice').src = `assets/images/${computerChoice}.PNG`;
+        document.getElementById('computer-choice').style.visibility = 'visible';
+
+        let outcome = determineWinner(choice, computerChoice);
+        updateScore(outcome);
+        updateOutcomeText(outcome);
+    }, 3000);
+}
+
+function determineWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return 'tie';
+    } else if ((playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'paper' && computerChoice === 'rock') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper')) {
+        return 'win';
+    } else {
+        return 'loss';
+    }
+}
+
+
+}
