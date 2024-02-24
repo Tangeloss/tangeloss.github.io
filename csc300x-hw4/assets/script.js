@@ -37,6 +37,17 @@ function playerChoice(choice) {
     }, 3000);
 }
 
+function determineWinner(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return 'tie';
+    } else if ((playerChoice === 'rock' && computerChoice === 'scissors') ||
+        (playerChoice === 'paper' && computerChoice === 'rock') ||
+        (playerChoice === 'scissors' && computerChoice === 'paper')) {
+        return 'win';
+    } else {
+        return 'loss';
+    }
+}
 
 function updateScore(outcome) {
     if (outcome === 'win') {
@@ -48,7 +59,6 @@ function updateScore(outcome) {
     }
     document.getElementById('wins').textContent = wins;
     document.getElementById('losses').textContent = losses;
-
     document.getElementById('ties').textContent = ties;
 }
 
