@@ -76,6 +76,12 @@ function updateOutcomeText(outcome) {
     document.getElementById('outcome').textContent = outcomeText;
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('wins').textContent = wins;
+    document.getElementById('losses').textContent = losses;
+    document.getElementById('ties').textContent = ties;
+});
+
 function resetScore() {
     wins = 0;
     losses = 0;
@@ -89,3 +95,4 @@ function resetScore() {
     document.getElementById('paper').style.border = '';
     document.getElementById('scissors').style.border = '';
 }
+
