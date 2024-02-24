@@ -11,7 +11,7 @@ body {
 
 
 .container {
-    max-width: 800px;
+    max-width: 40%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -44,7 +44,7 @@ h1 {
 .outcome-section {
     margin-top: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(89, 145, 219);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
