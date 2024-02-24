@@ -49,5 +49,42 @@ function determineWinner(playerChoice, computerChoice) {
     }
 }
 
+function updateScore(outcome) {
+    if (outcome === 'win') {
+        wins++;
+    } else if (outcome === 'loss') {
+        losses++;
+    } else {
+        ties++;
+    }
+    document.getElementById('wins').textContent = wins;
+    document.getElementById('losses').textContent = losses;
+    document.getElementById('ties').textContent = ties;
+}
 
+function updateOutcomeText(outcome) {
+    let outcomeText = '';
+    if (outcome === 'win') {
+        outcomeText = 'You win!';
+    } else if (outcome === 'loss') {
+        outcomeText = 'You lose!';
+    } else {
+        outcomeText = 'It\'s a tie!';
+    }
+
+    document.getElementById('outcome').textContent = outcomeText;
+}
+
+function resetScore() {
+    wins = 0;
+    losses = 0;
+    ties = 0;
+    document.getElementById('wins').textContent = wins;
+    document.getElementById('losses').textContent = losses;
+    document.getElementById('ties').textContent = ties;
+    document.getElementById('outcome').textContent = 'Make your move!';
+    document.getElementById('computer-choice').src = 'assets/images/question-mark.PNG';
+    document.getElementById('rock').style.border = '';
+    document.getElementById('paper').style.border = '';
+    document.getElementById('scissors').style.border = '';
 }
